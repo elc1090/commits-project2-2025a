@@ -1,0 +1,200 @@
+<!doctype html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <title>Project2 commit stats | DCG Web 2025a</title>
+    <link rel="canonical" href="self.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>    
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    <style amp-custom>
+      
+      amp-story-page {
+        /* background: linear-gradient(180deg, rgba(255, 87, 51, 0.8), rgba(255, 87, 51, 0)); */
+        background-color: #101010;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+      h1, h2, h3, h4, p {
+        color: #fff;
+        text-align: center;
+      }
+      
+      .highlight-text {
+        /* background-color: rgba(255, 255, 0, 0.7); */
+        /* background-color: rgb(18, 126, 45); */
+        /* background-color: rgb(52, 168, 83); */
+        background-color: #00441b;
+        padding: 0.2em 0.4em;
+        border-radius: 0.3em;
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      em, .highlight-data {
+        background-color: #00441b;
+        font-style: normal;   
+        font-weight: bold;   
+      }
+      .grid-fill {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 32px;
+      }
+      .metric-block {
+        margin-top: 10%;
+        text-align: center;
+      }
+      .metric-label {
+        margin-bottom: 12%;
+        font-size: 112.5%;
+      }
+      .chart-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .chart-img {
+        max-height: 50vh;
+        width: auto;
+      }
+
+      .upper-third,
+      .middle-third,
+      .lower-third {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <amp-story standalone
+      title="Commit Stats Story"
+      publisher="AndreaInfUFSM"
+      publisher-logo-src="logo.png"
+      poster-portrait-src="cover.jpg">
+
+      <!-- Slide 1 -->
+      <amp-story-page id="page1">
+        <amp-story-grid-layer template="thirds">
+
+          <div class="upper-third" grid-area="upper-third">
+            <h4>DCG Web 2025a - UFSM</h4>
+            <h1>Segundo projeto</h1>
+          </div>
+
+          <div class="middle-third" grid-area="middle-third">
+            <div class="metric-block">
+              <p class="metric-label">entregas | repos</p>
+              <p class="number-line">
+                <span class="highlight-text">15</span>
+              </p>
+            </div>
+            <div class="metric-block">
+              <p class="metric-label">commits</p>
+              <p class="number-line">
+                <span class="highlight-text">350</span>
+              </p>            
+            </div>            
+          </div>
+          
+          <div class="lower-third" grid-area="lower-third">
+            <p>Vamos analisar isso...</p>
+          </div>
+          
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+
+      
+
+      <!-- Slide 2 -->
+      <amp-story-page id="page2">
+        <amp-story-grid-layer template="vertical">
+          <h1>Commits</h1>
+          <p>📈 Quantidade de commits por repositório</p>
+          <p>15 repos em 19 dias de prazo</p>
+          <amp-img src="img/commit-messages.svg" width="720" height="1280" layout="responsive"></amp-img>
+          <p>min: <span class="highlight-data">3</span><span style="color: red; font-weight: bold; font-size: 2.2em;">↓</span> | max: <span class="highlight-data">57</span><span style="color: red; font-weight: bold; font-size: 2.2em;">↓</span> commits</p>
+          <p>abaixo de 15: <span class="highlight-data">47%</span><span style="color: green; font-weight: bold; font-size: 2.2em;">↑</span> | 19 ou mais: <span class="highlight-data">53%</span><span style="color: green; font-weight: bold; font-size: 2.2em;">↑</span></p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+
+
+
+      <!-- Slide 3 -->
+      <amp-story-page id="page3">
+        <amp-story-grid-layer template="vertical">
+          <h1>Commits</h1>
+          <p>📈 Heatmap de commits por dia</p>
+          <p>em 19 dias de prazo x 15 repos</p>
+          <div class="chart-wrapper">
+            <amp-img
+              class="chart-img"
+              src="img/commit-heatmap.svg"
+              width="300"
+              height="540"
+              layout="intrinsic"
+              alt="Mapa de calor mostrando atividade de commits em 15 dias de prazo e 27 repos">
+            </amp-img>
+          </div>
+          <p>commits concentrados no <em>fim</em> do prazo</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      
+
+
+      <!-- Slide 4 -->
+      <amp-story-page id="page4">
+        <amp-story-grid-layer template="vertical">
+          <h1>Mensagens nos commits</h1>
+          <p>Texto automático<br>
+             (ex: <i>"Update README.md"</i>)</p>          
+          <p>X</p>
+          <p>Texto customizado<br>
+             (ex: <i>"Adicionado componente para exibir exercício adicionado</i>")</p>
+          <amp-img src="img/commit-auto-custom.svg" width="720" height="1280" layout="responsive"></amp-img>          
+          <p>tamanho da mensagem<br>min: <em>4</em> chars | max: <em>334</em><span style="color: green; font-weight: bold; font-size: 2.2em;">↑</span>chars</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+
+
+
+      <!-- Slide 5 -->
+      <amp-story-page id="page5">
+        <amp-story-grid-layer template="vertical">
+          <h1>Convenções nos commits</h1>
+          <ul>
+            <li>conventional commits: &nbsp; <em>11</em> <span style="color: green; font-weight: bold; font-size: 1.8em;">↑</span> repos<br>(ex: <i>"feat: add favorite exercises"</i>)</li>
+            <li>padrão com verbo/prefix: &nbsp; <em>2</em> <span style="color: green; font-weight: bold; font-size: 1.8em;">&nbsp;</span>repos<br>(ex: <i>"Adiciona imagens dos musculos"</i>)</li>
+            <li>commits sem padrão: &nbsp; <em>2</em> <span style="color: green; font-weight: bold; font-size: 1.8em;">↓</span> repos<br>(ex: <i>"Deletando index.html"</i>)</li>
+          </ul>
+          <amp-img src="img/commit-conventional.svg" width="720" height="1280" layout="responsive"></amp-img>          
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+
+
+      
+      <!-- Slide 6 -->
+      <amp-story-page id="page6">
+        <amp-story-grid-layer template="thirds">
+          <h3 grid-area="upper-third">No terceiro projeto...</h3>
+          <h3 grid-area="middle-third">o que podemos melhorar?</h3>
+        </amp-story-grid-layer>
+      </amp-story-page>
+      
+
+    </amp-story>
+  </body>
+</html>
+
